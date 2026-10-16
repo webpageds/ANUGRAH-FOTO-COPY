@@ -316,7 +316,7 @@
     });
     const url = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + encodeURIComponent(message);
     // Open synchronously from the submit gesture to reduce popup-blocker issues.
-    const whatsappWindow = window.open(url, "_blank", "noopener,noreferrer");
+    const whatsappWindow = window.open(url, "_blank");
     if (whatsappWindow) {
       whatsappWindow.opener = null;
       closeCheckout();
