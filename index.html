@@ -25,14 +25,14 @@
         <span class="brand-mark"><svg viewBox="0 0 40 40" aria-hidden="true"><rect x="7" y="3" width="26" height="15" rx="3" fill="currentColor" opacity=".65"/><rect x="4" y="14" width="32" height="17" rx="4" fill="currentColor"/><rect x="10" y="24" width="20" height="12" rx="2" fill="#fff"/><path d="M12 8h16M12 27h16M12 31h11" stroke="#2478f2" stroke-width="2" stroke-linecap="round"/></svg></span>
         <span class="brand-copy"><strong>ANUGRAH</strong><small>FOTO COPY</small></span>
       </a>
-      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false"><span></span><span></span><span></span></button>
+      <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false" type="button"><span></span><span></span><span></span></button>
       <nav class="main-nav" id="mainNav" aria-label="Navigasi utama">
         <a class="nav-link active" href="#beranda">Beranda</a>
         <a class="nav-link" href="#layanan">Layanan</a>
         <a class="nav-link" href="#cara-pesan">Cara Pesan</a>
         <a class="nav-link" href="#lokasi">Lokasi</a>
       </nav>
-      <button class="cart-button" id="openCart" aria-label="Buka keranjang">
+      <button class="cart-button" id="openCart" aria-label="Buka keranjang" type="button">
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 4h2l2.1 10.1a2 2 0 0 0 2 1.6h8.8a2 2 0 0 0 1.9-1.4L22 8H6M10 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2ZM18 20a1 1 0 1 0 0-2 1 1 0 0 0 0 2Z"/></svg>
         <span>Keranjang</span><b id="cartCount">0</b>
       </button>
@@ -149,7 +149,7 @@
 
   <div class="drawer-overlay" id="drawerOverlay" hidden></div>
   <aside class="cart-drawer" id="cartDrawer" aria-labelledby="cartTitle" aria-hidden="true">
-    <div class="drawer-header"><div><span class="drawer-kicker">PESANAN KAMU</span><h2 id="cartTitle">Keranjang <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Tutup keranjang">×</button></div>
+    <div class="drawer-header"><div><span class="drawer-kicker">PESANAN KAMU</span><h2 id="cartTitle">Keranjang <span id="drawerCount">(0)</span></h2></div><button class="icon-button" id="closeCart" aria-label="Tutup keranjang" type="button">×</button></div>
     <div class="drawer-progress"><span>Susun kebutuhanmu, checkout, lalu kirim ke WhatsApp.</span></div>
     <div class="cart-items" id="cartItems"></div>
     <div class="cart-empty" id="cartEmpty"><div class="empty-cart-icon">▤</div><h3>Keranjang masih kosong</h3><p>Yuk, cari layanan yang kamu butuhkan.</p><button class="button button-primary" id="browseServices">Jelajahi Layanan</button></div>
@@ -157,7 +157,7 @@
   </aside>
 
   <dialog class="checkout-dialog" id="checkoutDialog" aria-labelledby="checkoutTitle">
-    <div class="checkout-head"><div><span class="drawer-kicker">TINGGAL SELANGKAH LAGI</span><h2 id="checkoutTitle">Checkout pesanan</h2><p>Lengkapi detail agar admin lebih mudah memproses kebutuhanmu.</p></div><button class="icon-button" id="closeCheckout" aria-label="Tutup checkout">×</button></div>
+    <div class="checkout-head"><div><span class="drawer-kicker">TINGGAL SELANGKAH LAGI</span><h2 id="checkoutTitle">Checkout pesanan</h2><p>Lengkapi detail agar admin lebih mudah memproses kebutuhanmu.</p></div><button class="icon-button" id="closeCheckout" aria-label="Tutup checkout" type="button">×</button></div>
     <form id="checkoutForm">
       <label class="form-label" for="customerName">Nama kamu <span>*</span></label><input id="customerName" name="customerName" autocomplete="name" placeholder="Nama pelanggan" required maxlength="80">
       <label class="form-label" for="customerPhone">Nomor WhatsApp kamu <small>(opsional)</small></label><input id="customerPhone" name="customerPhone" inputmode="tel" autocomplete="tel" placeholder="Contoh: 08xxxxxxxxxx" maxlength="24">
